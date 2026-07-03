@@ -1,0 +1,237 @@
+[
+    {
+        "Id": "ccbc362224f517f64256afdec6ead3fa80d035e46eb6c88d118e7a4fa5b8e818",
+        "Created": "2026-07-03T02:18:51.284256388Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mariadbd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 29157,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-07-03T02:20:29.40525177Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:efb4959ef2c835cd735dbc388eb9ad6aab0c78dd64febcd51bc17481111890c4",
+        "ResolvConfPath": "/var/lib/docker/containers/ccbc362224f517f64256afdec6ead3fa80d035e46eb6c88d118e7a4fa5b8e818/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/ccbc362224f517f64256afdec6ead3fa80d035e46eb6c88d118e7a4fa5b8e818/hostname",
+        "HostsPath": "/var/lib/docker/containers/ccbc362224f517f64256afdec6ead3fa80d035e46eb6c88d118e7a4fa5b8e818/hosts",
+        "LogPath": "/var/lib/docker/containers/ccbc362224f517f64256afdec6ead3fa80d035e46eb6c88d118e7a4fa5b8e818/ccbc362224f517f64256afdec6ead3fa80d035e46eb6c88d118e7a4fa5b8e818-json.log",
+        "Name": "/mariadb",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "miapp_mariadb_data:/var/lib/mysql:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "miapp_default",
+            "PortBindings": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "3306"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "miapp_mariadb_data",
+                "Source": "/var/lib/docker/volumes/miapp_mariadb_data/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "ccbc362224f5",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3306/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_ROOT_PASSWORD=root",
+                "MYSQL_DATABASE=bd_ventas",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "LANG=C.UTF-8",
+                "MARIADB_VERSION=1:11.8.8+maria~ubu2404"
+            ],
+            "Cmd": [
+                "mariadbd"
+            ],
+            "Image": "mariadb:11",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "a95e3c35d2afbc7c8ae1de7b08ede6896789b273fe5cbe40b2d487639581a7a4",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:efb4959ef2c835cd735dbc388eb9ad6aab0c78dd64febcd51bc17481111890c4",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "miapp",
+                "com.docker.compose.project.config_files": "/home/antony/proyectos/miApp/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/antony/proyectos/miApp",
+                "com.docker.compose.service": "db",
+                "com.docker.compose.version": "5.1.4",
+                "org.opencontainers.image.authors": "MariaDB Community",
+                "org.opencontainers.image.base.name": "docker.io/library/ubuntu:noble",
+                "org.opencontainers.image.description": "MariaDB Database for relational SQL",
+                "org.opencontainers.image.documentation": "https://hub.docker.com/_/mariadb/",
+                "org.opencontainers.image.licenses": "GPL-2.0",
+                "org.opencontainers.image.source": "https://github.com/MariaDB/mariadb-docker",
+                "org.opencontainers.image.title": "MariaDB Database",
+                "org.opencontainers.image.url": "https://github.com/MariaDB/mariadb-docker",
+                "org.opencontainers.image.vendor": "MariaDB Community",
+                "org.opencontainers.image.version": "11.8.8"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "a578c26994b5c871ab667acafa8a3a072e0b0938b59989e8b7c3a28aff46a9a5",
+            "SandboxKey": "/var/run/docker/netns/a578c26994b5",
+            "Ports": {},
+            "Networks": {}
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:09336a8c0cff9f363e133d8a245cca5ad3eeb326e0ffaedf74d49214c4571486",
+            "size": 2478,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:52df9b1ee71626e0088f7d400d5c6b5f7bb916f8f0c82b474289a4ece6cf3faf",
+                "org.opencontainers.image.base.name": "ubuntu:noble",
+                "org.opencontainers.image.created": "2026-07-02T02:30:04Z",
+                "org.opencontainers.image.revision": "53935c78b82bff912b361357d59db11d7246ea96",
+                "org.opencontainers.image.source": "https://github.com/MariaDB/mariadb-docker.git#53935c78b82bff912b361357d59db11d7246ea96:11.8",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mariadb",
+                "org.opencontainers.image.version": "11.8.8-noble"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
